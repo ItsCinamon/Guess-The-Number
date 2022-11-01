@@ -7,6 +7,7 @@ public class Test {
       ///// Intruduction
       Scanner scan = new Scanner(System.in);
       System.out.println("Input a number and try to guess the number from 0-5: ");
+      scan.close();
 
       ///// Generate random number
       int randNum = (int)(Math.random() * 6);
@@ -15,6 +16,7 @@ public class Test {
       ///// Input of guessed number
       Scanner gue = new Scanner(System.in);
       String gu = gue.next();
+      gue.close();
 
       //// Convert to interger
       int b = Integer.parseInt(gu);
